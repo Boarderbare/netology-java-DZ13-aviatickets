@@ -9,19 +9,7 @@ import java.util.Comparator;
 import java.util.Objects;
 
 public class Manager {
-    private String from;
-    private String to;
-    Repository repo = new Repository();
-
-//    public Manager(Repository repo) {
-//        this.repo = repo;
-//    }
-//    public Manager(String from, String to) {
-//        this.from = from;
-//        this.to = to;
-//    }
-//    public Manager() {
-//    }
+    private Repository repo = new Repository();
 
     public void addTicket(Ticket ticket) {
         repo.save(ticket);
