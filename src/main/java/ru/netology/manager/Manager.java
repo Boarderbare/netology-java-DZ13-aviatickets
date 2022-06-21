@@ -7,20 +7,11 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Manager {
-    private String from;
-    private String to;
-    Repository repo = new Repository();
 
-    public Manager(Repository repo) {
-        this.repo = repo;
-    }
+    private Repository repo = new Repository();
+
 
     public Manager() {
-    }
-
-    public Manager(String from, String to) {
-        this.from = from;
-        this.to = to;
     }
 
     public void addTicket(Ticket ticket) {
